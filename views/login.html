@@ -1,0 +1,14 @@
+<div class="container" style="margin-top: 100px; max-width: 400px;" ng-controller="loginController">
+    <h3 class="text-center">Iron Paradize Gym</h3>
+    <form ng-submit="login()">
+        <div class="form-group">
+            <label>Username:</label>
+            <input type="text" class="form-control" ng-model="username" required>
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" class="form-control" ng-model="password" required>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Login</button>
+    </form>
+</div>

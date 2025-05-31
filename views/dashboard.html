@@ -1,0 +1,24 @@
+<div class="dashboard-header position-relative">
+  <h1>Welcome to Iron Paradize Unisex Gym</h1>
+  <p class="lead">Ranchi, Jharkhand</p>
+  <button class="btn btn-danger logout-btn" ng-click="logout()">
+    <i class="fas fa-sign-out-alt"></i> Logout
+  </button>
+</div>
+
+<div class="container dashboard-container">
+  <div class="row">
+    <div class="col-md-4 mb-4" ng-repeat="card in dashboardCards">
+      <div class="card text-center p-4">
+        <div class="mb-3">
+          <i class="{{card.icon}}"></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{card.title}}</h5>
+          <p class="card-text">{{card.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
